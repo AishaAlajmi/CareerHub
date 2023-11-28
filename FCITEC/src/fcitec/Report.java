@@ -1,5 +1,7 @@
 package fcitec;
 
+import static fcitec.FCITEC.isAdmin;
+import static fcitec.FCITEC.userInfo;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -74,9 +76,9 @@ class Report {
 
     public static void displayReports(String userID) {
         System.out.println("------------------------- Report Details -------------------------");
-        String userIDString = String.valueOf(userID);
         // calling check isAdmin method
-        if (userIDString.charAt(0) == '9') {        // Print all reports if the first character of the userIDString is '9' (ADMIN)
+        if (isAdmin(userID)) {    
+            // Print all reports if the first character of the userIDString is '9' (ADMIN)
             for (int i = 0; i < reports.size(); i++) {
                 Report loopReport = reports.get(i);
                     System.out.println(loopReport.toString());

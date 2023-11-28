@@ -199,7 +199,7 @@ public class ReportTest {
         User user = User("Aisha","0553535507","2105522");
   
         Report instance = new Report(21, "215F", "PANIC ATTACK", user, "new");
-  Report.ReportInfo(user);
+       Report.ReportInfo(user);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
         System.out.println("ReportInfo");
@@ -256,14 +256,6 @@ public class ReportTest {
         
     }
 
-
-       public void testAddStore() {
-        ArrayList<Store> AddStore = new ArrayList<Store>();
-        Store instance = new Store("jawaher", "Ahmad", "0987654321",
-                "jawaherAhmad@gmail.com", "12", "Cake");
-        instance.AddStore(AddStore, instance);
-        assertNotNull(AddStore.get(0));
-    }
     /**
      * Test of toString method, of class Report.
      */
