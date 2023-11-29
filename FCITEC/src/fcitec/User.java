@@ -61,10 +61,10 @@ public class User {
            //check id
            if (FCITEC.isAdmin(ID)) {
             Admin admin = new Admin(UserName, PhoneNum, ID);
-          AddUser(admin, "Admin.txt");
+           AddUser(admin, "Admin.txt");
         } else {
             Student student = new Student(UserName, PhoneNum, ID);
-          AddUser(student, "Student.txt");
+           AddUser(student, "Student.txt");
         }
     }
   static void AddUser(User userData, String UserWriter) {
