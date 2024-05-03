@@ -9,14 +9,9 @@ package careerhub;
  *
  * @author aisha
  */
-public class CareerHub {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-        System.out.println("Aisha Alajmi");  
-    }
+class Student {
     
+ public String getUser(){
+        return "Black";
+    }  
 }
